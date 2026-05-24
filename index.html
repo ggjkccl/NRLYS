@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>日本株インテリジェンスシステム</title>
+<title>日本株式学習プログラム</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -21,7 +21,7 @@ width:100%;
 height:460px;
 object-fit:cover;
 display:block;
-filter:brightness(0.85) contrast(1.05);
+filter:brightness(0.85);
 }
 
 /* CONTAINER */
@@ -34,7 +34,7 @@ padding:0 20px;
 /* HERO */
 .hero{
 text-align:center;
-padding:25px 20px;
+padding:30px 20px;
 }
 
 h1{
@@ -48,15 +48,16 @@ font-size:13px;
 margin-top:10px;
 }
 
+/* TEXT */
 .sub{
 color:#cbd5e1;
-font-size:18px;
+font-size:17px;
 max-width:760px;
 margin:auto;
 line-height:1.6;
 }
 
-/* PERSONA INTRO */
+/* PERSONA */
 .persona{
 max-width:760px;
 margin:15px auto 0;
@@ -75,55 +76,20 @@ font-weight:700;
 color:#fff;
 text-decoration:none;
 margin-top:20px;
-transition:.2s;
 }
 
-.cta:hover{transform:scale(1.05)}
-
-/* RESULT STRIP */
-.result-strip{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-margin-top:30px;
-}
-
-.box{
-background:#111827;
-padding:18px;
-border-radius:12px;
-border:1px solid #1f2937;
-}
-
-.box h3{
-color:#34d399;
-font-size:16px;
-}
-
-/* WARNING */
-.warning{
-background:#111827;
-padding:40px 20px;
-text-align:center;
-border-top:1px solid #1f2937;
-border-bottom:1px solid #1f2937;
-margin-top:20px;
-}
-
-.warning h2{
-font-size:22px;
-}
-
-.highlight{
-color:#f87171;
-font-weight:700;
-}
-
-/* LOGIC */
-.logic{
+/* SECTION */
+section{
 padding:70px 0;
 }
 
+h2{
+text-align:center;
+font-size:26px;
+margin-bottom:30px;
+}
+
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -139,10 +105,28 @@ border:1px solid #1f2937;
 
 .card h3{color:#93c5fd}
 
-/* FINAL */
-.final{
+/* INFO BOX */
+.info{
+background:#0f172a;
+padding:50px 20px;
+border-top:1px solid #1f2937;
+border-bottom:1px solid #1f2937;
+}
+
+.list{
+max-width:900px;
+margin:auto;
+color:#cbd5e1;
+line-height:1.8;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+font-size:12px;
+color:#64748b;
 text-align:center;
-padding:70px 20px;
+padding:25px 20px;
+line-height:1.6;
 }
 
 /* FLOAT CTA */
@@ -157,7 +141,6 @@ border-radius:999px;
 font-weight:700;
 color:#fff;
 text-decoration:none;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
 z-index:999;
 }
 
@@ -165,7 +148,6 @@ z-index:999;
 @media(max-width:768px){
 .hero-img{height:300px}
 h1{font-size:28px}
-.result-strip{grid-template-columns:1fr}
 .grid{grid-template-columns:1fr}
 }
 </style>
@@ -173,115 +155,113 @@ h1{font-size:28px}
 
 <body>
 
-<!-- 🔥 1. 人设图（核心信任锚点） -->
+<!-- 🔥 IMAGE -->
 <img src="hero-image.jpg" class="hero-img" alt="persona">
 
-<!-- 🔥 2. 首屏 -->
+<!-- 🔥 HERO -->
 <div class="hero container">
 
-  <h1>情報格差で“勝てる投資家”へ</h1>
+  <h1>日本株式の学習と分析スキルを身につける</h1>
 
-  <div class="tag">日本株インテリジェンス教育システム</div>
-
-  <!-- 🔥 人设简介（关键增强层） -->
-  <div class="persona">
-    日本株式市場に特化した独立系インベストメントリサーチャー。<br/>
-    機関投資家レベルの情報処理ロジックを個人投資家向けに再構築し、意思決定の再現性を高める教育システムを開発。
+  <div class="tag">
+    投資リテラシー教育プログラム
   </div>
 
   <p class="sub">
-    投資の差は努力ではなく「情報設計」で決まる。<br/>
-    正しい判断構造を持つだけで結果は変わる。
+    このプログラムは、日本株市場の構造理解と意思決定プロセスの学習を目的とした教育コンテンツです。<br/>
+    個人投資家が情報を整理し、判断力を高めることを支援します。
   </p>
 
-  <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
-    LINEで無料参加する
-  </a>
-
-  <!-- 🔥 结果导向 -->
-  <div class="result-strip">
-
-    <div class="box">
-      <h3>判断速度の最適化</h3>
-      <p>数分で銘柄評価が可能</p>
-    </div>
-
-    <div class="box">
-      <h3>感情排除</h3>
-      <p>ルールベース投資</p>
-    </div>
-
-    <div class="box">
-      <h3>情報優位性</h3>
-      <p>市場より一歩早い判断</p>
-    </div>
-
+  <div class="persona">
+    独立系の投資学習コンテンツ設計者として、
+    市場分析・情報整理・意思決定プロセスの体系化を研究しています。
   </div>
 
-</div>
-
-<!-- 🔥 风险强化 -->
-<div class="warning">
-
-  <h2>
-    すでに<span class="highlight">情報格差は拡大</span>しています
-  </h2>
-
-  <p style="color:#cbd5e1">
-    同じニュースでも、結果が変わる理由は「解釈能力」です。
-  </p>
+  <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
+    LINEで学習コンテンツを受け取る
+  </a>
 
 </div>
 
-<!-- 🔥 逻辑解释层 -->
-<section class="logic">
+<!-- 🔥 WHAT YOU LEARN -->
+<section>
+
   <div class="container">
 
-    <h2 style="text-align:center;margin-bottom:30px;">
-      なぜ結果が変わるのか
-    </h2>
+    <h2>学習内容</h2>
 
     <div class="grid">
 
       <div class="card">
-        <h3>市場構造</h3>
-        <p>株価は感情ではなく資金で動く</p>
+        <h3>市場構造の理解</h3>
+        <p>株価がどのような要因で変動するかを学びます</p>
       </div>
 
       <div class="card">
-        <h3>意思決定</h3>
-        <p>速度が遅いと負ける</p>
+        <h3>情報整理スキル</h3>
+        <p>ニュースや決算情報を整理する方法</p>
       </div>
 
       <div class="card">
-        <h3>ルール化</h3>
-        <p>再現性がない戦略は長期で負ける</p>
+        <h3>意思決定プロセス</h3>
+        <p>投資判断を体系的に行う考え方</p>
       </div>
 
       <div class="card">
-        <h3>情報設計</h3>
-        <p>見る情報を変えるだけで結果が変わる</p>
+        <h3>リスク管理の基礎</h3>
+        <p>投資におけるリスクの理解と管理方法</p>
       </div>
 
     </div>
 
   </div>
+
 </section>
+
+<!-- 🔥 INFO -->
+<div class="info">
+
+  <div class="container">
+
+    <h2>このプログラムについて</h2>
+
+    <div class="list">
+
+      ・本プログラムは投資教育を目的としています  
+      ・特定の金融商品の購入を推奨するものではありません  
+      ・投資にはリスクがあり、元本割れの可能性があります  
+      ・すべての学習内容は情報提供を目的としています  
+
+    </div>
+
+  </div>
+
+</div>
 
 <!-- 🔥 FINAL CTA -->
-<section class="final">
+<section>
 
-  <h2>今行動する人だけが次に進む</h2>
+  <div class="container" style="text-align:center">
 
-  <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
-    LINEで無料参加する
-  </a>
+    <h2>まずは学習コンテンツから始める</h2>
+
+    <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
+      LINEで無料コンテンツを受け取る
+    </a>
+
+  </div>
 
 </section>
 
-<!-- 🔥 FLOAT CTA -->
+<!-- 🔥 DISCLAIMER -->
+<div class="disclaimer">
+本サイトは投資教育コンテンツを提供するものであり、特定の金融商品の購入や利益を保証するものではありません。<br/>
+投資にはリスクが伴い、元本割れの可能性があります。
+</div>
+
+<!-- FLOAT -->
 <a class="float" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
-  LINE登録
+LINE登録
 </a>
 
 </body>
