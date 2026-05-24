@@ -34,7 +34,7 @@ padding:0 20px;
 /* HERO */
 .hero{
 text-align:center;
-padding:30px 20px;
+padding:25px 20px;
 }
 
 h1{
@@ -48,7 +48,6 @@ font-size:13px;
 margin-top:10px;
 }
 
-/* TEXT */
 .sub{
 color:#cbd5e1;
 font-size:17px;
@@ -76,7 +75,10 @@ font-weight:700;
 color:#fff;
 text-decoration:none;
 margin-top:20px;
+transition:.2s;
 }
+
+.cta:hover{transform:scale(1.05)}
 
 /* SECTION */
 section{
@@ -105,7 +107,7 @@ border:1px solid #1f2937;
 
 .card h3{color:#93c5fd}
 
-/* INFO BOX */
+/* INFO SECTION */
 .info{
 background:#0f172a;
 padding:50px 20px;
@@ -118,6 +120,7 @@ max-width:900px;
 margin:auto;
 color:#cbd5e1;
 line-height:1.8;
+font-size:14px;
 }
 
 /* DISCLAIMER */
@@ -141,6 +144,7 @@ border-radius:999px;
 font-weight:700;
 color:#fff;
 text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
 z-index:999;
 }
 
@@ -155,7 +159,7 @@ h1{font-size:28px}
 
 <body>
 
-<!-- 🔥 IMAGE -->
+<!-- 🔥 HERO IMAGE（人设图） -->
 <img src="hero-image.jpg" class="hero-img" alt="persona">
 
 <!-- 🔥 HERO -->
@@ -167,15 +171,16 @@ h1{font-size:28px}
     投資リテラシー教育プログラム
   </div>
 
-  <p class="sub">
-    このプログラムは、日本株市場の構造理解と意思決定プロセスの学習を目的とした教育コンテンツです。<br/>
-    個人投資家が情報を整理し、判断力を高めることを支援します。
-  </p>
-
+  <!-- 🔥 人设简介（Google安全版） -->
   <div class="persona">
-    独立系の投資学習コンテンツ設計者として、
-    市場分析・情報整理・意思決定プロセスの体系化を研究しています。
+    日本株式市場の情報整理と投資判断の考え方を学ぶための教育コンテンツを設計しています。<br/>
+    個人投資家が自分で判断できるようになるための学習プロジェクトです。
   </div>
+
+  <p class="sub">
+    本プログラムは、日本株市場の構造理解と意思決定プロセスの学習を目的とした教育コンテンツです。<br/>
+    投資に関する考え方や情報整理スキルの習得を支援します。
+  </p>
 
   <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
     LINEで学習コンテンツを受け取る
@@ -183,7 +188,7 @@ h1{font-size:28px}
 
 </div>
 
-<!-- 🔥 WHAT YOU LEARN -->
+<!-- 🔥 学习内容 -->
 <section>
 
   <div class="container">
@@ -194,17 +199,17 @@ h1{font-size:28px}
 
       <div class="card">
         <h3>市場構造の理解</h3>
-        <p>株価がどのような要因で変動するかを学びます</p>
+        <p>株価がどのような要因で動くのかを学習します</p>
       </div>
 
       <div class="card">
         <h3>情報整理スキル</h3>
-        <p>ニュースや決算情報を整理する方法</p>
+        <p>ニュースや決算情報の読み解き方</p>
       </div>
 
       <div class="card">
         <h3>意思決定プロセス</h3>
-        <p>投資判断を体系的に行う考え方</p>
+        <p>投資判断の考え方を体系的に整理</p>
       </div>
 
       <div class="card">
@@ -218,7 +223,7 @@ h1{font-size:28px}
 
 </section>
 
-<!-- 🔥 INFO -->
+<!-- 🔥 信息说明 -->
 <div class="info">
 
   <div class="container">
@@ -227,10 +232,10 @@ h1{font-size:28px}
 
     <div class="list">
 
-      ・本プログラムは投資教育を目的としています  
-      ・特定の金融商品の購入を推奨するものではありません  
-      ・投資にはリスクがあり、元本割れの可能性があります  
-      ・すべての学習内容は情報提供を目的としています  
+      ・本コンテンツは投資教育を目的としています<br/>
+      ・特定の金融商品の購入を推奨するものではありません<br/>
+      ・投資にはリスクがあり、元本割れの可能性があります<br/>
+      ・提供される情報は学習目的の参考情報です<br/>
 
     </div>
 
@@ -243,7 +248,7 @@ h1{font-size:28px}
 
   <div class="container" style="text-align:center">
 
-    <h2>まずは学習コンテンツから始める</h2>
+    <h2>まずは学習から始める</h2>
 
     <a class="cta" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
       LINEで無料コンテンツを受け取る
@@ -253,13 +258,13 @@ h1{font-size:28px}
 
 </section>
 
-<!-- 🔥 DISCLAIMER -->
+<!-- 🔥 DISCLAIMER（Google必备） -->
 <div class="disclaimer">
 本サイトは投資教育コンテンツを提供するものであり、特定の金融商品の購入や利益を保証するものではありません。<br/>
 投資にはリスクが伴い、元本割れの可能性があります。
 </div>
 
-<!-- FLOAT -->
+<!-- 🔥 FLOAT CTA -->
 <a class="float" href="https://line.me/R/ti/p/@YOUR_LINE_ID">
 LINE登録
 </a>
